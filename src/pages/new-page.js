@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "gatsby";
 
 const NewPage = () => (
-  <div>
-    <h1>New Page</h1>
-    <p>Welcome to your new Gatsby page.</p>
-    <Link to="/">Go back to the homepage</Link>
+  <div dir="rtl">
+    <h1>דף חדש</h1>
+    <p>ברוכים הבאים לדף החדש שלכם ב-Gatsby.</p>
+    <Link to="/">חזרה לדף הבית</Link>
   </div>
 );
 
