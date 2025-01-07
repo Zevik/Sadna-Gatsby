@@ -574,14 +574,16 @@ footer {
         max-width: 100%;
         aspect-ratio: auto;
         height: auto;
+        padding: 2rem 1rem;
     }
 
     .techniques-items {
         position: static;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
         animation: none;
+        padding: 1rem;
     }
 
     .technique-card {
@@ -589,7 +591,25 @@ footer {
         left: auto;
         top: auto;
         margin: 0;
+        width: 100%;
+        height: auto;
+        min-height: 120px;
         transform: none !important;
+    }
+
+    .card-front, .card-back {
+        min-height: 120px;
+    }
+
+    .center-title {
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        margin-bottom: 2rem;
     }
 }
 
