@@ -419,6 +419,10 @@ footer {
     max-width: 800px;
 }
 
+.price-section .section-title {
+    color: white;
+}
+
 .price-container {
     display: flex;
     justify-content: center;
