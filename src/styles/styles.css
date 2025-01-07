@@ -584,31 +584,42 @@ footer {
         position: static;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
         animation: none;
         padding: 1rem;
-        width: calc(100% - 2rem);  /* תיקון רוחב */
-        max-width: 450px;  /* הקטנת רוחב מקסימלי */
-        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
         box-sizing: border-box;
     }
 
     .technique-card {
         position: relative;
-        left: auto;
-        top: auto;
-        width: 100%;
+        width: calc(100% - 2rem);
+        max-width: 400px;
         margin: 0;
         min-height: 100px;
         transform: none !important;
     }
 
+    /* כרטיסים זוגיים לצד ימין */
+    .technique-card:nth-child(even) {
+        margin-right: auto;
+        margin-left: 1rem;
+    }
+
+    /* כרטיסים אי-זוגיים לצד שמאל */
+    .technique-card:nth-child(odd) {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
     .center-title {
         width: calc(100% - 2rem);
-        max-width: 450px;
-        margin: 1rem auto;
+        max-width: 400px;
+        margin: 1rem auto 2rem;
         border-radius: 15px;
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     .techniques-items {
