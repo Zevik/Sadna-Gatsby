@@ -557,7 +557,7 @@ footer {
     }
 
     .workshop-details {
-        padding: 2rem 1rem;
+        padding: 1rem 0;  /* איפוס padding חיצוני */
     }
 
     .details-container {
@@ -575,7 +575,8 @@ footer {
         aspect-ratio: auto;
         height: auto;
         padding: 0;
-        margin: 2rem auto;
+        margin: 0;
+        width: 100%;
         box-sizing: border-box;
     }
 
@@ -583,12 +584,12 @@ footer {
         position: static;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
         animation: none;
-        padding: 0 1rem;
-        max-width: 500px;
+        padding: 1rem;
+        width: calc(100% - 2rem);  /* תיקון רוחב */
+        max-width: 450px;  /* הקטנת רוחב מקסימלי */
         margin: 0 auto;
-        width: 100%;
         box-sizing: border-box;
     }
 
@@ -596,24 +597,18 @@ footer {
         position: relative;
         left: auto;
         top: auto;
-        margin: 0;
         width: 100%;
-        height: auto;
-        min-height: 120px;
+        margin: 0;
+        min-height: 100px;
         transform: none !important;
-        box-sizing: border-box;
     }
 
     .center-title {
-        position: relative;
-        transform: none;
-        left: auto;
-        top: auto;
         width: calc(100% - 2rem);
-        height: auto;
+        max-width: 450px;
+        margin: 1rem auto;
         border-radius: 15px;
-        margin: 0 auto 2rem;
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .techniques-items {
