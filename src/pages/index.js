@@ -33,30 +33,79 @@ const IndexPage = () => (
 
       <section className="workshop-details">
         <h2 className="section-title">מה בסדנה</h2>
-        <div className="details-container">
-          <div className="techniques-list">
+        <div className="techniques-circle">
+          <div className="center-title">
             <h3>טכניקות ושיטות עבודה</h3>
-            <div className="info-cards">
-              <div className="info-card">
-                <h3>תקשורת בלתי אמצעית, דימויים ואילתור</h3>
+          </div>
+          <div className="techniques-items">
+            <div className="technique-card">
+              <div className="card-inner">
+                <div className="card-front">
+                  <h3>תקשורת בלתי אמצעית</h3>
+                </div>
+                <div className="card-back">
+                  <p>דימויים ואילתור לשחרור והתחדשות</p>
+                </div>
               </div>
-              <div className="info-card">
-                <h3>שירת תפילה</h3>
+            </div>
+            <div className="technique-card">
+              <div className="card-inner">
+                <div className="card-front">
+                  <h3>שירת תפילה</h3>
+                </div>
+                <div className="card-back">
+                  <p>שירה כדרך להתחבר לרוח ולנפש</p>
+                </div>
               </div>
-              <div className="info-card">
-                <h3>תרגילי נשימה</h3>
+            </div>
+            <div className="technique-card">
+              <div className="card-inner">
+                <div className="card-front">
+                  <h3>תרגילי נשימה</h3>
+                </div>
+                <div className="card-back">
+                  <p>תרגילים לשחרור והרפיה</p>
+                </div>
               </div>
-              <div className="info-card">
-                <h3>מדיטציה ודמיון מודרך</h3>
+            </div>
+            <div className="technique-card">
+              <div className="card-inner">
+                <div className="card-front">
+                  <h3>מדיטציה ודמיון מודרך</h3>
+                </div>
+                <div className="card-back">
+                  <p>שיטות להרגעת הנפש והגוף</p>
+                </div>
               </div>
-              <div className="info-card">
-                <h3>לייב טראנס לשחרור הורמונלי במוח</h3>
+            </div>
+            <div className="technique-card">
+              <div className="card-inner">
+                <div className="card-front">
+                  <h3>לייב טראנס</h3>
+                </div>
+                <div className="card-back">
+                  <p>שחרור הורמונלי במוח</p>
+                </div>
               </div>
-              <div className="info-card">
-                <h3>פריקת מתחים עם תנועה, קול וצחוק</h3>
+            </div>
+            <div className="technique-card">
+              <div className="card-inner">
+                <div className="card-front">
+                  <h3>פריקת מתחים</h3>
+                </div>
+                <div className="card-back">
+                  <p>עם תנועה, קול וצחוק</p>
+                </div>
               </div>
-              <div className="info-card">
-                <h3>מעגלי שיתוף ושיח</h3>
+            </div>
+            <div className="technique-card">
+              <div className="card-inner">
+                <div className="card-front">
+                  <h3>מעגלי שיתוף ושיח</h3>
+                </div>
+                <div className="card-back">
+                  <p>שיתוף ושיח בקבוצה</p>
+                </div>
               </div>
             </div>
           </div>
