@@ -38,6 +38,8 @@ body {
     line-height: 1.6;
     background: linear-gradient(135deg, #f6f7fb 0%, #ffffff 100%);
     min-height: 100vh;
+    direction: rtl;
+    text-align: right;
 }
 
 header {
@@ -140,6 +142,7 @@ h2 {
     position: absolute;
     bottom: 0;
     right: 0;
+    left: auto;
     width: 40px;
     height: 3px;
     background: var(--primary);
@@ -234,7 +237,7 @@ h2 {
 }
 
 .contact-form input[type="tel"] {
-    text-align: right;
+    text-align: left;
     direction: ltr;
 }
 
@@ -375,6 +378,7 @@ footer {
 .techniques-list li {
     margin: 1rem 0;
     padding-right: 1.5rem;
+    padding-left: 0;
     position: relative;
     line-height: 1.6;
 }
@@ -383,6 +387,7 @@ footer {
     content: '•';
     position: absolute;
     right: 0;
+    left: auto;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -455,6 +460,7 @@ footer {
 
     .details-container {
         grid-template-columns: 1fr;
+        text-align: right;
     }
 
     .price-tag {

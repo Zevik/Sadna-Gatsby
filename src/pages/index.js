@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import "../styles/styles.css";
 
 const IndexPage = () => (
-  <div>
+  <div dir="rtl">
     <header>
       <img src="/title.png" alt="אומנות השחרור" class="header-image" />
       <div class="intro-text typing-effect">
