@@ -35,7 +35,7 @@ const IndexPage = () => (
         <h2 className="section-title">מה בסדנה</h2>
         <div className="techniques-circle">
           <div className="center-title">
-            <h3>טכניקות ושיטות עבודה</h3>
+            <h3>מה בסדנה</h3>
           </div>
           <div className="techniques-items">
             <div className="technique-card">

@@ -466,6 +466,13 @@ footer {
     z-index: 2;
 }
 
+.center-title h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+}
+
 .techniques-items {
     position: absolute;
     width: 100%;
@@ -478,6 +485,10 @@ footer {
     width: 150px;
     height: 150px;
     perspective: 1000px;
+    transform-origin: center;
+    left: 50%;
+    top: 50%;
+    margin: -75px;  /* מחצית מהגובה והרוחב */
 }
 
 .card-inner {
@@ -519,10 +530,13 @@ footer {
 }
 
 /* מיקום הכרטיסים במעגל */
-.technique-card:nth-child(1) { transform: translate(50%, 0) rotate(0deg); }
-.technique-card:nth-child(2) { transform: translate(35%, 35%) rotate(45deg); }
-.technique-card:nth-child(3) { transform: translate(0, 50%) rotate(90deg); }
-/* המשך עבור שאר הכרטיסים */
+.technique-card:nth-child(1) { transform: translate(200%, 0%) rotate(0deg); }
+.technique-card:nth-child(2) { transform: translate(141%, 141%) rotate(45deg); }
+.technique-card:nth-child(3) { transform: translate(0%, 200%) rotate(90deg); }
+.technique-card:nth-child(4) { transform: translate(-141%, 141%) rotate(135deg); }
+.technique-card:nth-child(5) { transform: translate(-200%, 0%) rotate(180deg); }
+.technique-card:nth-child(6) { transform: translate(-141%, -141%) rotate(225deg); }
+.technique-card:nth-child(7) { transform: translate(0%, -200%) rotate(270deg); }
 
 @media (max-width: 768px) {
     header {
@@ -567,8 +581,10 @@ footer {
     }
 
     .technique-card {
-        position: static;
-        width: 100%;
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0;
         transform: none !important;
     }
 }
