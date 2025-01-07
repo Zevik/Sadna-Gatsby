@@ -574,9 +574,46 @@ footer {
         max-width: 100%;
         aspect-ratio: auto;
         height: auto;
-        padding: 2rem;
-        margin: 0 auto;
+        padding: 0;
+        margin: 2rem auto;
         box-sizing: border-box;
+    }
+
+    .techniques-items {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        animation: none;
+        padding: 0 1rem;
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .technique-card {
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        min-height: 120px;
+        transform: none !important;
+        box-sizing: border-box;
+    }
+
+    .center-title {
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        width: calc(100% - 2rem);
+        height: auto;
+        border-radius: 15px;
+        margin: 0 auto 2rem;
+        padding: 1.5rem;
     }
 
     .techniques-items {
