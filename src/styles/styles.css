@@ -607,3 +607,7 @@ footer {
         padding: 1rem;
     }
 }
+
+.animated-text {
+    white-space: pre-line;
+}
