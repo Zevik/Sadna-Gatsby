@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
     --primary: #ff6b6b; /* Red */
     --primary-light: #ff9f43; /* Orange */
@@ -322,7 +328,7 @@ footer {
 
 .social-link:hover {
     background: white;
-    color: var(--primary);
+    color: var (--primary);
 }
 
 .workshop-details {
