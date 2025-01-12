@@ -411,7 +411,7 @@ footer {
 
 .price-section {
     background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 50%, var(--secondary-light) 100%);
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     color: white;
     text-align: center;
     border-radius: 20px;
@@ -431,17 +431,32 @@ footer {
 }
 
 .price-tag {
-    font-size: 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1.5rem 3rem;
     border-radius: 15px;
     backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.price-tag:hover {
+    transform: scale(1.05);
 }
 
 .price-note {
     margin-top: 1rem;
     font-size: 1.2rem;
     opacity: 0.9;
+}
+
+.sessions-info {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+.sessions-info p {
+    margin: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .additional-cards {

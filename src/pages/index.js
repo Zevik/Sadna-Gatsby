@@ -55,13 +55,16 @@ const IndexPage = () => (
       </section>
 
       <section className="price-section">
-        <h2 className="section-title">עלות הסדנה</h2>
+        <h2 className="section-title">פרטי הסדנה</h2>
         <div className="price-container">
           <div className="price-card">
-            <div className="price-tag">
-              <strong>1,080 ש"ח</strong>
+            <div className="sessions-info">
+              <p>סדרה של ארבעה מפגשים</p>
+              <p>כל מפגש שלוש שעות</p>
             </div>
-            <p className="price-note">ניתן לחלק לתשלומים</p>
+            <div className="price-tag">
+              <strong>650 ש"ח</strong>
+            </div>
           </div>
         </div>
       </section>
