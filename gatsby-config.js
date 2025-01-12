@@ -13,14 +13,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: `${__dirname}/static/images`, // Ensure this path is correct
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: `${__dirname}/src/images`, // הוספת מקור נוסף לתמונות ב-src/images
+        path: `${__dirname}/static/images`, // ווידוא שהנתיב נכון
       },
     },
   ],
