@@ -444,6 +444,30 @@ footer {
     opacity: 0.9;
 }
 
+.additional-cards {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 50%, var(--secondary-light) 100%);
+    padding: 4rem 2rem;
+    margin: 4rem auto;
+    border-radius: 20px;
+}
+
+.additional-cards .info-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.additional-cards .info-card h3 {
+    color: white;
+}
+
+.additional-cards .info-card p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.additional-cards .info-card h3::after {
+    background: white;
+}
+
 @media (max-width: 768px) {
     header {
         padding: 4rem 1rem;

@@ -31,6 +31,37 @@ const IndexPage = () => (
         </div>
       </section>
 
+      <section className="info-cards additional-cards">
+        <div className="info-card">
+          <h3>תקשורת בלתי אמצעית</h3>
+          <p>ג'בריש ואילתור לשחרור והתחדשות</p>
+        </div>
+        <div className="info-card">
+          <h3>שירת תפילה</h3>
+          <p>שירה כדרך להתחבר לרוח ולנפש</p>
+        </div>
+        <div className="info-card">
+          <h3>תרגילי נשימה</h3>
+          <p>תרגילים לשחרור והרפיה</p>
+        </div>
+        <div className="info-card">
+          <h3>מדיטציה ודמיון מודרך</h3>
+          <p>שיטות להרגעת הנפש והגוף</p>
+        </div>
+        <div className="info-card">
+          <h3>לייב טראנס</h3>
+          <p>שחרור הורמונלי במוח</p>
+        </div>
+        <div className="info-card">
+          <h3>פריקת מתחים</h3>
+          <p>עם תנועה, קול וצחוק</p>
+        </div>
+        <div className="info-card">
+          <h3>מעגלי שיתוף ושיח</h3>
+          <p>שיתוף ושיח בקבוצה</p>
+        </div>
+      </section>
+
       <section className="video-section">
         <video controls>
           <source src="/videoplayback.mp4" type="video/mp4" />
