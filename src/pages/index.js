@@ -1,7 +1,31 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import { motion } from "framer-motion";
 import "../styles/styles.css";
+
+const AnimatedText = ({ text }) => {
+  const words = text.split(" ");
+  return (
+    <p>
+      {words.map((word, i) => (
+        <motion.span
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+            delay: i * 0.2,
+            ease: "easeOut"
+          }}
+          style={{ display: "inline-block", marginRight: "0.3em" }}
+        >
+          {word}
+        </motion.span>
+      ))}
+    </p>
+  );
+};
 
 const IndexPage = () => (
   <div dir="rtl">
@@ -14,12 +38,12 @@ const IndexPage = () => (
         className="header-image"
       />
       <div className="intro-text">
-        <p>זה הזמן לשחרר את עצמך אפילו יותר, ולהרגיש את זרם החיים שפועם לך בגוף</p>
-        <p>בסדרת המפגשים עם מאיר אבינר.</p>
-        <p>אני מזמין אותך לגילוי עצמי דרך הניגון:</p>
-        <p>נרגיש מקומות עמוקים בנפש, נתעורר בלייב טראנס,</p>
-        <p>נכיל ונלעס את ההפכים שבתוכנו, ננפץ פרות קדושות, נתפלל יחד,</p>
-        <p>נבטא ונשוחרר, נצחק עד שיכאב.</p>
+        <AnimatedText text="זה הזמן לשחרר את עצמך אפילו יותר, ולהרגיש את זרם החיים שפועם לך בגוף" />
+        <AnimatedText text="בסדרת המפגשים עם מאיר אבינר." />
+        <AnimatedText text="אני מזמין אותך לגילוי עצמי דרך הניגון:" />
+        <AnimatedText text="נרגיש מקומות עמוקים בנפש, נתעורר בלייב טראנס," />
+        <AnimatedText text="נכיל ונלעס את ההפכים שבתוכנו, ננפץ פרות קדושות, נתפלל יחד," />
+        <AnimatedText text="נבטא ונשוחרר, נצחק עד שיכאב." />
       </div>
     </header>
     
