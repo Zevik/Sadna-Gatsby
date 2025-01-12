@@ -26,24 +26,28 @@ const AnimatedText = ({ text }) => {
   );
 };
 
-// רכיב חדש שמציג כל שורה בטקסט עם אנימציה של כניסה חלקה
+// רכיב חדש שמציג כל אות בטקסט עם אנימציה של כניסה חלקה
 const AnimatedLines = ({ lines }) => {
   return (
     <div>
       {lines.map((line, i) => (
-        <motion.p
-          key={i}
-          initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            duration: 0.5,
-            delay: i * 0.3,
-            ease: "easeOut",
-          }}
-          style={{ margin: "1rem 0" }}
-        >
-          {line}
-        </motion.p>
+        <p key={i} style={{ margin: "1rem 0" }}>
+          {line.split("").map((char, j) => (
+            <motion.span
+              key={j}
+              initial={{ x: 200, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{
+                duration: 0.5,
+                delay: i * 0.3 + j * 0.05,
+                ease: "easeOut",
+              }}
+              style={{ display: "inline-block" }}
+            >
+              {char}
+            </motion.span>
+          ))}
+        </p>
       ))}
     </div>
   );
