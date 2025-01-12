@@ -1,4 +1,0 @@
-# .gitkeep
-# This file is intentionally left blank to ensure the src/images directory is tracked by git.
-
-# ודא שתיקיית `src/images` קיימת גם אם היא ריקה, כדי למנוע שגיאות בבנייה. אם התיקייה ריקה, הוסף קובץ `.gitkeep`.
