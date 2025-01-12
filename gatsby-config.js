@@ -5,5 +5,9 @@ module.exports = {
     author: `@zevik`,
     siteUrl: `https://www.yourdomain.com`,
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp"
+  ],
 }

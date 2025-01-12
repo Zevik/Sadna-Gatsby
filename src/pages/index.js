@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import "../styles/styles.css";
 
 const IndexPage = () => (
   <div dir="rtl">
     <header>
-      <img src="/title.png" alt="אומנות השחרור" className="header-image" />
+      <StaticImage
+        src="../images/title.png"
+        alt="אומנות השחרור"
+        placeholder="blurred"
+        layout="constrained"
+        className="header-image"
+      />
       <div className="intro-text letter-sequence">
         <p>זה הזמן לשחרר את עצמך אפילו יותר, ולהרגיש את זרם החיים שפועם לך בגוף</p>
         <p>בסדרת המפגשים עם מאיר אבינר.</p>
