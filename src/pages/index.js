@@ -16,21 +16,6 @@ const IndexPage = () => (
     </header>
     
     <main>
-      <section className="info-cards">
-        <div className="info-card">
-          <h3>על הסדנה</h3>
-          <p>סדנה מעשית ומעמיקה המשלבת תרגול, למידה והתנסות אישית. נלמד טכניקות מעשיות לשחרור והתפתחות אישית.</p>
-        </div>
-        <div className="info-card">
-          <h3>למי מיועד</h3>
-          <p>הסדנה מתאימה לכל מי שמעוניין להעמיק בתהליכי שחרור ולפתח כלים מעשיים להתמודדות עם אתגרי החיים.</p>
-        </div>
-        <div className="info-card">
-          <h3>מה נלמד</h3>
-          <p>טכניקות מעשיות לשחרור, תרגילי נשימה והרפיה, כלים להתמודדות עם מתח וחרדה, ושיטות לפיתוח מודעות עצמית.</p>
-        </div>
-      </section>
-
       <section className="info-cards additional-cards">
         <div className="info-card">
           <h3>תקשורת בלתי אמצעית</h3>
@@ -87,20 +72,11 @@ const IndexPage = () => (
           <p><a href="tel:052-6518168" className="phone-link">052-6518168</a></p>
           <p>מחכה לראות אותך</p>
         </div>
-      </section>
-
-      <section className="important-notes">
-        <div className="notes-container">
-          <div className="note-card disclaimer">
-            <h3>הבהרה חשובה</h3>
-            <p>הסדנה אינה מחליפה טיפול נפשי, וחשוב לציין כי מאיר אבינר אינו מטפל רגשי בהכשרתו.</p>
-          </div>
-          <div className="note-card cancellation">
-            <h3>מדיניות ביטולים</h3>
-            <p>ניתן לבטל השתתפות עד 14 ימים לפני תחילת הסדנה, בהחזר מלא.</p>
-          </div>
+        <div className="disclaimer-small">
+          <p>הסדנה אינה מחליפה טיפול נפשי, וחשוב לציין כי מאיר אבינר אינו מטפל רגשי בהכשרתו.</p>
         </div>
       </section>
+
     </main>
 
     <footer>
