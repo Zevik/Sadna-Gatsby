@@ -468,14 +468,47 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .price-container {
-        flex-direction: column;
-        gap: 2rem;
+    header {
+        padding: 4rem 1rem;
+        border-radius: 0 0 50px 50px;
     }
 
-    .profile-image {
-        width: 150px;
-        height: 150px;
+    .intro-text p {
+        font-size: 1.75rem; /* גודל טקסט כמו "תקשורת בלתי אמצעית" */
+    }
+
+    .info-cards {
+        padding: 0 1rem 4rem;
+    }
+
+    .workshop-details {
+        padding: 1rem 0;  /* איפוס padding חיצוני */
+    }
+
+    .details-container {
+        grid-template-columns: 1fr;
+        text-align: right;
+    }
+
+    .price-tag {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-text p {
+        font-size: 1.2rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .price-tag {
+        font-size: 1.2rem;
+        padding: 1rem;
     }
 }
 
@@ -608,6 +641,3 @@ footer {
     }
 }
 
-.animated-text {
-    white-space: pre-line;
-}

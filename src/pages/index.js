@@ -1,7 +1,30 @@
 import React from "react";
 import { Link } from "gatsby";
+import { motion } from "framer-motion";
 import "../styles/styles.css";
-import AnimatedText from "../components/AnimatedText"; // ייבוא הרכיב החדש
+
+const AnimatedText = ({ text }) => {
+  const words = text.split(" ");
+  return (
+    <p>
+      {words.map((word, i) => (
+        <motion.span
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+            delay: i * 0.2,
+            ease: "easeOut"
+          }}
+          style={{ display: "inline-block", marginRight: "0.3em" }}
+        >
+          {word}
+        </motion.span>
+      ))}
+    </p>
+  );
+};
 
 const IndexPage = () => (
   <div dir="rtl">
