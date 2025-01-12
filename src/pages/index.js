@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // Ensure this import is necessary
 import "../styles/styles.css";
 
 const AnimatedText = ({ text }) => {
@@ -30,7 +30,7 @@ const IndexPage = () => (
   <div dir="rtl">
     <header>
       <img 
-        src="/title.png" 
+        src="/static/images/title.png" 
         alt="אומנות השחרור" 
         className="header-image"
       />
@@ -86,7 +86,7 @@ const IndexPage = () => (
       <section className="price-section">
         <div className="price-container">
           <div className="profile-image">
-            <img src="/image.jpeg" alt="תמונת פרופיל" />
+            <img src="/static/images/image.jpeg" alt="תמונת פרופיל" />
           </div>
           <div className="price-card">
             <div className="sessions-info">
