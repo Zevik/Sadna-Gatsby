@@ -30,7 +30,7 @@ const IndexPage = () => (
   <div dir="rtl">
     <header>
       <img 
-        src="/title.png" 
+        src="/static/title.png" 
         alt="אומנות השחרור" 
         className="header-image"
       />
@@ -71,14 +71,14 @@ const IndexPage = () => (
           <p>עם תנועה, קול וצחוק</p>
         </div>
         <div className="info-card">
-          <h3>מעגלי שיתוף ושיח</h3>
+          <h3>מעגלי שיתוף ושיח</h>
           <p>שיתוף ושיח בקבוצה</p>
         </div>
       </section>
 
       <section className="video-section">
         <video controls>
-          <source src="/videoplayback.mp4" type="video/mp4" />
+          <source src="/static/videoplayback.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </section>
@@ -86,7 +86,7 @@ const IndexPage = () => (
       <section className="price-section">
         <div className="price-container">
           <div className="profile-image">
-            <img src="/image.jpeg" alt="תמונת פרופיל" />
+            <img src="/static/image.jpeg" alt="תמונת פרופיל" />
           </div>
           <div className="price-card">
             <div className="sessions-info">
