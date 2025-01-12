@@ -65,6 +65,9 @@ const IndexPage = () => (
       <section className="price-section">
         <h2 className="section-title">פרטי הסדנה</h2>
         <div className="price-container">
+          <div className="profile-image">
+            <img src="/image.jpeg" alt="תמונת פרופיל" />
+          </div>
           <div className="price-card">
             <div className="sessions-info">
               <p>סדרה של ארבעה מפגשים</p>
