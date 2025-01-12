@@ -3,29 +3,6 @@ import { Link } from "gatsby";
 import { motion } from "framer-motion"; // Ensure this import is necessary
 import "../styles/styles.css";
 
-const AnimatedText = ({ text }) => {
-  const words = text.split(" ");
-  return (
-    <p>
-      {words.map((word, i) => (
-        <motion.span
-          key={i}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.3,
-            delay: i * 0.2,
-            ease: "easeOut"
-          }}
-          style={{ display: "inline-block", marginRight: "0.3em" }}
-        >
-          {word}
-        </motion.span>
-      ))}
-    </p>
-  );
-};
-
 // רכיב חדש שמציג כל אות בטקסט עם אנימציה של כניסה חלקה
 const AnimatedLines = ({ lines }) => {
   return (

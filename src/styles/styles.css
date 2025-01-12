@@ -75,11 +75,13 @@ header {
     margin: 3rem auto 0;
     padding: 2rem;
     border-radius: 20px;
+    opacity: 1; /* עדכון מוצא opacity ל-1 */
+    /* אפשרות להוסיף אנימציה חדשה אם נדרש */
 }
 
 .intro-text p {
     margin: 0;
-    opacity: 0;
+    /* opacity: 0; */ /* הסר את opacity */
     font-size: 2.2rem; /* Set a fixed doubled font size */
     line-height: 1.8;
     text-align: center;
