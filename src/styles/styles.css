@@ -83,15 +83,17 @@ header {
     font-size: 2.2rem; /* Set a fixed doubled font size */
     line-height: 1.8;
     text-align: center;
-    animation: fadeInText 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    /* הסר את האנימציה הקודמת כדי למנוע קונפליקט עם Framer Motion */
+    /* animation: fadeInText 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards; */
     color: #FED940;
 }
 
+/* הסר או הער את עיכוב האנימציה עבור כל שורה
 .intro-text p:nth-child(1) { animation-delay: 0.2s; }
 .intro-text p:nth-child(2) { animation-delay: 1.4s; }
 .intro-text p:nth-child(3) { animation-delay: 2.6s; }
-.intro-text p:nth-child(4) { animation-delay: 3.8s; }
-.intro-text p:nth-child(5) { animation-delay: 5.0s; }
+... 
+*/
 
 .intro-text p:not(:last-child) {
     margin-bottom: 1.5rem;
