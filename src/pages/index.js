@@ -40,7 +40,7 @@ const IndexPage = () => (
         <AnimatedText text="אני מזמין אותך לגילוי עצמי דרך הניגון:" />
         <AnimatedText text="נרגיש מקומות עמוקים בנפש, נתעורר בלייב טראנס," />
         <AnimatedText text="נכיל ונלעס את ההפכים שבתוכנו, ננפץ פרות קדושות, נתפלל יחד," />
-        <AnimatedText text="נבטא ונשוחרר, נצחק עד שיכאב." />
+        <AnimatedText text="נבטא ונשוחרר,נצחק עד שיכאב." />
       </div>
     </header>
     
