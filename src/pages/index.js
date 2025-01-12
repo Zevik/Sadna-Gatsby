@@ -5,27 +5,33 @@ import "../styles/styles.css";
 
 // רכיב חדש שמציג כל אות בטקסט עם אנימציה של כניסה חלקה
 const AnimatedLines = ({ lines }) => {
+  let totalDelay = 0;
   return (
     <div>
-      {lines.map((line, i) => (
-        <p key={i} style={{ margin: "1rem 0" }}>
-          {line.split("").map((char, j) => (
-            <motion.span
-              key={j}
-              initial={{ x: 200, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{
-                duration: 0.5,
-                delay: i * 0.3 + j * 0.05,
-                ease: "easeOut",
-              }}
-              style={{ display: "inline-block" }}
-            >
-              {char}
-            </motion.span>
-          ))}
-        </p>
-      ))}
+      {lines.map((line, i) => {
+        const lineDelay = totalDelay;
+        // זמן כולל עבור כל תווי השורה
+        totalDelay += 0.5 + line.length * 0.05;
+        return (
+          <p key={i} style={{ margin: "1rem 0" }}>
+            {line.split("").map((char, j) => (
+              <motion.span
+                key={j}
+                initial={{ x: 200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.5,
+                  delay: lineDelay + j * 0.05,
+                  ease: "easeOut",
+                }}
+                style={{ display: "inline-block" }}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </p>
+        );
+      })}
     </div>
   );
 };
