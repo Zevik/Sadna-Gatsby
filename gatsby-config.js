@@ -8,7 +8,13 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp"
-    // הסרת gatsby-source-filesystem כי אנחנו משתמשים בתיקיית static
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/images`,
+      },
+    },
   ],
 }

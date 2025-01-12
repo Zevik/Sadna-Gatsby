@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import { motion } from "framer-motion";
 import "../styles/styles.css";
 
@@ -29,10 +30,14 @@ const AnimatedText = ({ text }) => {
 const IndexPage = () => (
   <div dir="rtl">
     <header>
-      <img 
-        src="/title.png" 
-        alt="אומנות השחרור" 
+      <StaticImage
+        src="../images/title.png"
+        alt="אומנות השחרור"
+        placeholder="blurred"
+        layout="constrained"
         className="header-image"
+        width={800}
+        quality={95}
       />
       <div className="intro-text">
         <AnimatedText text="זה הזמן לשחרר את עצמך אפילו יותר, ולהרגיש את זרם החיים שפועם לך בגוף" />
@@ -40,7 +45,7 @@ const IndexPage = () => (
         <AnimatedText text="אני מזמין אותך לגילוי עצמי דרך הניגון:" />
         <AnimatedText text="נרגיש מקומות עמוקים בנפש, נתעורר בלייב טראנס," />
         <AnimatedText text="נכיל ונלעס את ההפכים שבתוכנו, ננפץ פרות קדושות, נתפלל יחד," />
-        <AnimatedText text="נבטא ונשוחרר,נצחק עד שיכאב." />
+        <AnimatedText text="נבטא ונשוחרר, נצחק עד שיכאב." />
       </div>
     </header>
     
