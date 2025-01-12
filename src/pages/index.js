@@ -26,6 +26,29 @@ const AnimatedText = ({ text }) => {
   );
 };
 
+// רכיב חדש שמציג כל שורה בטקסט עם אנימציה של כניסה חלקה
+const AnimatedLines = ({ lines }) => {
+  return (
+    <div>
+      {lines.map((line, i) => (
+        <motion.p
+          key={i}
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: i * 0.3,
+            ease: "easeOut",
+          }}
+          style={{ margin: "1rem 0" }}
+        >
+          {line}
+        </motion.p>
+      ))}
+    </div>
+  );
+};
+
 const IndexPage = () => (
   <div dir="rtl">
     <header>
@@ -35,12 +58,17 @@ const IndexPage = () => (
         className="header-image"
       />
       <div className="intro-text">
-        <AnimatedText text="זה הזמן לשחרר את עצמך אפילו יותר, ולהרגיש את זרם החיים שפועם לך בגוף" />
-        <AnimatedText text="בסדרת המפגשים עם מאיר אבינר." />
-        <AnimatedText text="אני מזמין אותך לגילוי עצמי דרך הניגון:" />
-        <AnimatedText text="נרגיש מקומות עמוקים בנפש, נתעורר בלייב טראנס," />
-        <AnimatedText text="נכיל ונלעס את ההפכים שבתוכנו, ננפץ פרות קדושות, נתפלל יחד," />
-        <AnimatedText text="נבטא ונשוחרר,נצחק עד שיכאב." />
+        <AnimatedLines
+          lines={[
+            "זה הזמן לשחרר את עצמך אפילו יותר,",
+            "ולהרגיש את זרם החיים שפועם לך בגוף",
+            "בסדרת המפגשים עם מאיר אבינר.",
+            "אני מזמין אותך לגילוי עצמי דרך הניגון:",
+            "נרגיש מקומות עמוקים בנפש, נתעורר בלייב טראנס,",
+            "נכיל ונלעס את ההפכים שבתוכנו, ננפץ פרות קדושות, נתפלל יחד,",
+            "נבטא ונשחרר, נצחק עד שיכאב.",
+          ]}
+        />
       </div>
     </header>
     
