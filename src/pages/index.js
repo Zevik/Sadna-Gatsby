@@ -13,7 +13,7 @@ const IndexPage = () => (
         layout="constrained"
         className="header-image"
       />
-      <div className="intro-text letter-sequence">
+      <div className="intro-text">
         <p>זה הזמן לשחרר את עצמך אפילו יותר, ולהרגיש את זרם החיים שפועם לך בגוף</p>
         <p>בסדרת המפגשים עם מאיר אבינר.</p>
         <p>אני מזמין אותך לגילוי עצמי דרך הניגון:</p>

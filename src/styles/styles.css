@@ -57,7 +57,7 @@ header {
     padding: 6rem 1rem 8rem;
     background: none;
     border-radius: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem; /* הקטנת הרווח התחתון */
     color: white;
     box-shadow: 0 4px 30px rgba(255, 107, 107, 0.2);
     animation: fadeInUp 1s ease-out;
@@ -84,6 +84,7 @@ header {
     line-height: 1.8;
     text-align: center;
     animation: fadeInText 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    color: #FED940;
 }
 
 .intro-text p:nth-child(1) { animation-delay: 0.2s; }
@@ -494,11 +495,9 @@ footer {
 }
 
 .letter-sequence p {
-  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid white;
-  width: 0; /* בעזרת האנימציה יגדל בהדרגה */
   animation: typewriter 3s steps(40, end) forwards,
              blink 0.75s step-end infinite;
   margin: 1rem auto;
