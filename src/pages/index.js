@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import { motion } from "framer-motion";
 import "../styles/styles.css";
 
@@ -30,14 +29,10 @@ const AnimatedText = ({ text }) => {
 const IndexPage = () => (
   <div dir="rtl">
     <header>
-      <StaticImage
-        src="../images/title.png"
-        alt="אומנות השחרור"
-        placeholder="blurred"
-        layout="constrained"
+      <img 
+        src="/title.png" 
+        alt="אומנות השחרור" 
         className="header-image"
-        width={800}
-        quality={95}
       />
       <div className="intro-text">
         <AnimatedText text="זה הזמן לשחרר את עצמך אפילו יותר, ולהרגיש את זרם החיים שפועם לך בגוף" />
