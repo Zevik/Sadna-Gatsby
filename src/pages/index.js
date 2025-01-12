@@ -36,8 +36,8 @@ const IndexPage = () => (
         placeholder="blurred"
         layout="constrained"
         className="header-image"
-        width={800}  // נוסיף רוחב מקסימלי
-        quality={95}  // נוסיף איכות גבוהה
+        width={800}
+        quality={95}
       />
       <div className="intro-text">
         <AnimatedText text="זה הזמן לשחרר את עצמך אפילו יותר, ולהרגיש את זרם החיים שפועם לך בגוף" />
